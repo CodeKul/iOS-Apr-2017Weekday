@@ -34,10 +34,11 @@ class ViewController: UIViewController {
         let datePicker = UIDatePicker(frame: CGRect(x:10, y:200, width:300, height: 300))
         datePicker.backgroundColor = UIColor.blue
         datePicker.datePickerMode = .countDownTimer
-        datePicker.addTarget(self, action: #selector(datePickedValueChanged(sender:)), for: .valueChanged)
+        
         
 
         self.view.addSubview(datePicker)
+        datePicker.addTarget(self, action: #selector(datePickedValueChanged(sender:)), for: .valueChanged)
         
         // Do any additional setup after loading the view, typically from a nib.
     }
