@@ -16,6 +16,7 @@
 		382E2D801EB1A0B800578DB8 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382E2D7F1EB1A0B800578DB8 /* ThirdViewController.swift */; };
 		382E2D821EB1A0CB00578DB8 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382E2D811EB1A0CB00578DB8 /* FourthViewController.swift */; };
 		382E2D841EB1A62B00578DB8 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382E2D831EB1A62B00578DB8 /* FifthViewController.swift */; };
+		8720A1211EB2FC3E00D3EC95 /* SixthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720A1201EB2FC3E00D3EC95 /* SixthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		382E2D7F1EB1A0B800578DB8 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		382E2D811EB1A0CB00578DB8 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		382E2D831EB1A62B00578DB8 /* FifthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
+		8720A1201EB2FC3E00D3EC95 /* SixthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SixthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				382E2D7F1EB1A0B800578DB8 /* ThirdViewController.swift */,
 				382E2D811EB1A0CB00578DB8 /* FourthViewController.swift */,
 				382E2D831EB1A62B00578DB8 /* FifthViewController.swift */,
+				8720A1201EB2FC3E00D3EC95 /* SixthViewController.swift */,
 				382E2D6F1EB19BD800578DB8 /* Main.storyboard */,
 				382E2D721EB19BD800578DB8 /* Assets.xcassets */,
 				382E2D741EB19BD800578DB8 /* LaunchScreen.storyboard */,
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				382E2D841EB1A62B00578DB8 /* FifthViewController.swift in Sources */,
+				8720A1211EB2FC3E00D3EC95 /* SixthViewController.swift in Sources */,
 				382E2D7E1EB19D5500578DB8 /* SecondViewController.swift in Sources */,
 				382E2D6E1EB19BD800578DB8 /* ViewController.swift in Sources */,
 				382E2D801EB1A0B800578DB8 /* ThirdViewController.swift in Sources */,
@@ -313,6 +317,7 @@
 				382E2D7C1EB19BD800578DB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

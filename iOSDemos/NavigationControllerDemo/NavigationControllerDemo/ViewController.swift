@@ -10,12 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var myArray : Array<String>?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         
         appDelegate.myGlobalVar = "Codekul"
+        
+        myArray = ["Red", "Green", "Blue", "Yellow", "Cyan", "Magenta", "Brown", "Gray"]
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -26,7 +30,10 @@ class ViewController: UIViewController {
     
     @IBAction func gotoFifthVC(sender : UIBarButtonItem) {
         
-        let fifthVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "fifthVC")
+        let fifthVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "fifthVC") as! FifthViewController
+        
+        fifthVC.arrData = myArray
+        
         self.navigationController?.pushViewController(fifthVC, animated: true)
         
     }
