@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Otz-I9-fc4">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SVC-->
+        <scene sceneID="lwF-tV-RfK">
+            <objects>
+                <viewController id="Nhv-ao-OkH" customClass="FirstViewController" customModule="TabbarDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MJy-vM-zCQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="gj6-2r-7JT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WR4-ok-S4D">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.87058824300000004" green="0.69019609689999994" blue="0.92156863209999995" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="SVC" image="bicycle.png" selectedImage="bicycle.png" id="RfF-oz-WSE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lfg-BX-S6s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-220" y="288"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JwO-4v-EDx">
+            <objects>
+                <viewController id="gRK-wo-xhF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qnr-9l-odP"/>
+                        <viewControllerLayoutGuide type="bottom" id="CYa-FZ-ifL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z31-C7-RDU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490570000003" green="0.34901961679999999" blue="0.1921568662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" image="bicycle.png" id="3o5-WF-NtS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i4f-3r-hGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="654" y="286"/>
+        </scene>
+        <!--FVC-->
+        <scene sceneID="HbT-Qy-3UQ">
+            <objects>
+                <navigationController id="1rS-Vb-l3C" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="FVC" image="bicycle.png" id="lIb-95-fJC"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6yO-jb-5hN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="okk-OA-pPa" kind="relationship" relationship="rootViewController" id="SKc-XV-tQA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gL8-PN-D9K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1215" y="-377"/>
+        </scene>
+        <!--FVC-->
+        <scene sceneID="9cQ-U8-n5e">
+            <objects>
+                <viewController id="okk-OA-pPa" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yjk-Fk-KZy"/>
+                        <viewControllerLayoutGuide type="bottom" id="d9D-YJ-YUg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d6S-oM-KZN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.61176472900000001" green="0.6549019814" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="FVC" image="bicycle.png" id="WdP-Or-Fsm"/>
+                    <navigationItem key="navigationItem" id="B0d-4a-ydl">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="wMy-wT-REW">
+                            <connections>
+                                <segue destination="GTe-vj-tez" kind="show" id="8dY-RJ-dyl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kH0-Jy-vy5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-220" y="-377"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mOf-Mf-mBa">
+            <objects>
+                <viewController id="G8k-vK-RbR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WKH-Dd-FT0"/>
+                        <viewControllerLayoutGuide type="bottom" id="iDf-o6-9Vm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rgW-sp-jJT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" image="bicycle.png" id="QJR-aJ-GMl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wGZ-MZ-eMx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="-377"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="0fd-Rp-fmN">
+            <objects>
+                <viewController id="GTe-vj-tez" customClass="CameraViewController" customModule="TabbarDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4d7-sN-hrZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="4cB-jF-kCZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GWK-gA-i8W">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XHP-9m-TVG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1442" y="-377"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="W1i-vR-8Hj">
+            <objects>
+                <tabBarController id="Otz-I9-fc4" sceneMemberID="viewController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="3ge-DL-ddz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Nhv-ao-OkH" kind="relationship" relationship="viewControllers" id="Vuq-fQ-0iQ"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="rbC-4F-9je"/>
+                        <segue destination="gRK-wo-xhF" kind="relationship" relationship="viewControllers" id="9Dd-aA-CQT"/>
+                        <segue destination="G8k-vK-RbR" kind="relationship" relationship="viewControllers" id="7Pc-gF-ul0"/>
+                        <segue destination="KDC-x2-8xe" kind="relationship" relationship="viewControllers" id="oZ4-x1-vy7"/>
+                        <segue destination="1rS-Vb-l3C" kind="relationship" relationship="viewControllers" id="Qa2-eQ-SqQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wrv-Il-ERm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1215" y="285"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SecondViewController" customModule="TabbarDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.94117647410000005" green="0.90196079019999997" blue="0.21960784489999999" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" image="bicycle.png" id="qkm-Ly-acY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-221" y="965"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fbD-Xj-oIs">
+            <objects>
+                <viewController id="KDC-x2-8xe" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qd8-KB-JGv"/>
+                        <viewControllerLayoutGuide type="bottom" id="1rw-Av-MvR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Aw-4d-lQr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" image="bicycle.png" id="fBd-zC-uqR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F2v-qR-Ej6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="964"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bicycle.png" width="24" height="24"/>
+    </resources>
+</document>
