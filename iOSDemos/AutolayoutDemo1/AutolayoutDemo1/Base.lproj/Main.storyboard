@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutolayoutDemo1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lTP-wn-t9I">
+                                <rect key="frame" x="20" y="20" width="53" height="30"/>
+                                <state key="normal" title="TopLeft"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7DA-hT-dLd">
+                                <rect key="frame" x="183.66666666666666" y="353" width="47" height="30"/>
+                                <state key="normal" title="Center"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSL-iz-fTO">
+                                <rect key="frame" x="332" y="20" width="62" height="30"/>
+                                <state key="normal" title="TopRight"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="US2-47-nP1">
+                                <rect key="frame" x="20" y="686" width="77" height="30"/>
+                                <state key="normal" title="BottomLeft"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJ8-RI-O6U">
+                                <rect key="frame" x="308" y="686" width="86" height="30"/>
+                                <state key="normal" title="BottomRight"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23A-Zm-2ig">
+                                <rect key="frame" x="171" y="20" width="72" height="30"/>
+                                <state key="normal" title="TopCenter"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jR3-aT-PlH">
+                                <rect key="frame" x="311" y="353" width="83" height="30"/>
+                                <state key="normal" title="RightCenter"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Si4-ou-KuZ">
+                                <rect key="frame" x="20" y="353" width="73" height="30"/>
+                                <state key="normal" title="LeftCenter"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jR3-aT-PlH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2XG-4t-utm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NJ8-RI-O6U" secondAttribute="bottom" constant="20" id="BFI-WM-IN1"/>
+                            <constraint firstItem="23A-Zm-2ig" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EDX-7j-b1i"/>
+                            <constraint firstItem="mSL-iz-fTO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="HM8-Pa-fn9"/>
+                            <constraint firstItem="7DA-hT-dLd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LxJ-yL-hO4"/>
+                            <constraint firstItem="Si4-ou-KuZ" firstAttribute="centerY" secondItem="7DA-hT-dLd" secondAttribute="centerY" id="TUe-ab-YZg"/>
+                            <constraint firstItem="Si4-ou-KuZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VkA-YN-TSz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="US2-47-nP1" secondAttribute="bottom" constant="20" id="XXj-vP-qge"/>
+                            <constraint firstItem="mSL-iz-fTO" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="YMC-qx-3uw"/>
+                            <constraint firstItem="23A-Zm-2ig" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="a2G-HI-wDx"/>
+                            <constraint firstItem="lTP-wn-t9I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jEk-01-Mbb"/>
+                            <constraint firstItem="7DA-hT-dLd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kfZ-kM-vEm"/>
+                            <constraint firstItem="US2-47-nP1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nP3-kp-vvv"/>
+                            <constraint firstItem="NJ8-RI-O6U" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="sX1-gb-T8b"/>
+                            <constraint firstItem="jR3-aT-PlH" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="vSz-QH-TJ9"/>
+                            <constraint firstItem="lTP-wn-t9I" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="y2T-7h-CeX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
