@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayoutDemoAbhi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A10-uD-pfW">
+                                <rect key="frame" x="16" y="518" width="77" height="30"/>
+                                <state key="normal" title="BottomLeft"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCM-fn-Uo4">
+                                <rect key="frame" x="242" y="28" width="62" height="30"/>
+                                <state key="normal" title="TopRight"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbR-9R-iP6">
+                                <rect key="frame" x="218" y="518" width="86" height="30"/>
+                                <state key="normal" title="BottomRight"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kca-Z5-PKh">
+                                <rect key="frame" x="16" y="28" width="53" height="30"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QKU-3s-HUt">
+                                        <rect key="frame" x="0.0" y="0.0" width="53" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CwI-5q-2Ey">
+                                                <rect key="frame" x="0.0" y="0.0" width="53" height="30"/>
+                                                <state key="normal" title="TopLeft"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="QKU-3s-HUt" firstAttribute="top" secondItem="kca-Z5-PKh" secondAttribute="top" id="4iS-HO-beN"/>
+                                    <constraint firstItem="QKU-3s-HUt" firstAttribute="leading" secondItem="kca-Z5-PKh" secondAttribute="leading" id="ei0-YQ-CJ8"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bbR-9R-iP6" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="3Vj-xM-EZT"/>
+                            <constraint firstItem="kca-Z5-PKh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Gml-kn-goq"/>
+                            <constraint firstItem="kca-Z5-PKh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="KmV-Xr-7zL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="A10-uD-pfW" secondAttribute="bottom" constant="20" id="RnG-gA-9kW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bbR-9R-iP6" secondAttribute="bottom" constant="20" id="bhl-DN-T4z"/>
+                            <constraint firstItem="kca-Z5-PKh" firstAttribute="leading" secondItem="A10-uD-pfW" secondAttribute="leading" id="ccx-M0-gkU"/>
+                            <constraint firstItem="MCM-fn-Uo4" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="r4Z-hM-0Yd"/>
+                            <constraint firstItem="A10-uD-pfW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xgM-Pf-gm8"/>
+                            <constraint firstItem="kca-Z5-PKh" firstAttribute="top" secondItem="MCM-fn-Uo4" secondAttribute="top" id="zCg-J9-Nci"/>
+                            <constraint firstItem="MCM-fn-Uo4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="zxc-bj-akc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
