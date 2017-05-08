@@ -22,10 +22,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LMk-hE-lkD" userLabel="View1">
-                                <rect key="frame" x="16" y="20" width="288" height="255"/>
-                                <color key="backgroundColor" red="0.93725490570000003" green="0.34901961679999999" blue="0.1921568662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OWT-wE-vm7" userLabel="View2">
                                 <rect key="frame" x="16" y="293" width="139" height="255"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -33,6 +29,10 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JIJ-q8-dnx" userLabel="View3">
                                 <rect key="frame" x="165" y="293" width="139" height="255"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LMk-hE-lkD" userLabel="View1">
+                                <rect key="frame" x="16" y="20" width="288" height="255"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.34901961679999999" blue="0.1921568662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -55,7 +55,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.875" y="138.38028169014083"/>
+            <point key="canvasLocation" x="324" y="137"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="0gD-Jn-rRi">
@@ -74,14 +74,7 @@
                                 <color key="backgroundColor" red="0.93725490570000003" green="0.34901961679999999" blue="0.1921568662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="255" id="L17-RP-v2O"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zue-lT-wEF" userLabel="View2">
-                                <rect key="frame" x="16" y="293" width="139" height="255"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="139" id="2zc-bs-BdV"/>
-                                    <constraint firstAttribute="height" constant="255" id="bls-wR-NBE"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="255" id="ih7-Gy-iEO"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PkF-CY-ZSL" userLabel="View3">
@@ -92,6 +85,14 @@
                                     <constraint firstAttribute="height" constant="255" id="UDU-sv-3iH"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zue-lT-wEF" userLabel="View2">
+                                <rect key="frame" x="16" y="293" width="139" height="255"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="139" id="2zc-bs-BdV"/>
+                                    <constraint firstAttribute="height" constant="255" id="bls-wR-NBE"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -100,6 +101,9 @@
                             <constraint firstItem="S6z-wg-XNG" firstAttribute="top" secondItem="lGg-Uk-5jv" secondAttribute="bottom" id="eo2-5O-YOG"/>
                             <constraint firstItem="PkF-CY-ZSL" firstAttribute="trailing" secondItem="wsv-lU-YGQ" secondAttribute="trailingMargin" id="hIo-Qf-KZo"/>
                             <constraint firstItem="S6z-wg-XNG" firstAttribute="trailing" secondItem="wsv-lU-YGQ" secondAttribute="trailingMargin" id="iBd-U7-DhG"/>
+                            <constraint firstItem="S6z-wg-XNG" firstAttribute="top" secondItem="lGg-Uk-5jv" secondAttribute="bottom" id="pI6-qa-iNc"/>
+                            <constraint firstItem="S6z-wg-XNG" firstAttribute="leading" secondItem="wsv-lU-YGQ" secondAttribute="leadingMargin" id="s3h-at-SDD"/>
+                            <constraint firstItem="S6z-wg-XNG" firstAttribute="trailing" secondItem="wsv-lU-YGQ" secondAttribute="trailingMargin" id="sAb-n7-YG2"/>
                             <constraint firstItem="Wm3-xo-Wca" firstAttribute="top" secondItem="zue-lT-wEF" secondAttribute="bottom" constant="20" id="wnF-T4-pXc"/>
                             <constraint firstItem="zue-lT-wEF" firstAttribute="leading" secondItem="wsv-lU-YGQ" secondAttribute="leadingMargin" id="yVF-Yv-HFJ"/>
                         </constraints>
