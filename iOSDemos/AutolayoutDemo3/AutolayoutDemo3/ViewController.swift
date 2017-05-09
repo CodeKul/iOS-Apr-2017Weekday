@@ -26,11 +26,9 @@ class ViewController: UIViewController {
             leftSideConstraintsForMenu.constant = 0
         }
 
-        UIView.animate(withDuration: 2) {
-            
+        UIView.animate(withDuration: 0.3) {
             self.view.layoutIfNeeded()
         }
-        
     }
     
     override func didReceiveMemoryWarning() {
