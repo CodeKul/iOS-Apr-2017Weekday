@@ -67,14 +67,14 @@
                         <constraints>
                             <constraint firstItem="JHD-0b-UyP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="67" id="Mss-fZ-9aj"/>
                             <constraint firstItem="xTE-DT-glV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="QYA-dO-cvf"/>
-                            <constraint firstItem="JHD-0b-UyP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-200" id="UG8-qJ-E7w"/>
+                            <constraint firstItem="JHD-0b-UyP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-200" identifier="leftSideConstraintsForMenu" id="UG8-qJ-E7w"/>
                             <constraint firstItem="xTE-DT-glV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VDZ-KR-Qtf"/>
                             <constraint firstAttribute="bottom" secondItem="JHD-0b-UyP" secondAttribute="bottom" id="jMx-NB-KAW"/>
                             <constraint firstAttribute="trailing" secondItem="xTE-DT-glV" secondAttribute="trailing" id="kLz-lr-d3Z"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="leading" destination="UG8-qJ-E7w" id="gKa-Kh-YCp"/>
+                        <outlet property="leftSideConstraintsForMenu" destination="UG8-qJ-E7w" id="YLa-rD-pPc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
