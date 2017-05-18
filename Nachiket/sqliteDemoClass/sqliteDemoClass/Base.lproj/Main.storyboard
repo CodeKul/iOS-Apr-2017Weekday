@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -65,12 +65,20 @@
                                 <rect key="frame" x="187" y="151" width="51" height="30"/>
                                 <state key="normal" title="Update"/>
                                 <connections>
-                                    <action selector="updateClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dkh-1C-aE3"/>
+                                    <action selector="updateClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tgJ-Eb-vC3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zs5-5L-U6F">
+                                <rect key="frame" x="253" y="151" width="45" height="30"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oVb-R3-puJ"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="zs5-5L-U6F" firstAttribute="top" secondItem="6tD-JO-tRX" secondAttribute="bottom" constant="17" id="8MJ-gJ-2rB"/>
                             <constraint firstItem="6tD-JO-tRX" firstAttribute="top" secondItem="UGs-dd-hrH" secondAttribute="bottom" constant="8" id="8mQ-64-Mht"/>
                             <constraint firstItem="S7L-34-C7w" firstAttribute="leading" secondItem="85Y-h6-lp9" secondAttribute="trailing" constant="15" id="BAY-ry-jrA"/>
                             <constraint firstItem="S7L-34-C7w" firstAttribute="top" secondItem="6tD-JO-tRX" secondAttribute="bottom" constant="17" id="GpT-vX-nLo"/>
@@ -87,6 +95,7 @@
                             <constraint firstItem="BTZ-sj-6V2" firstAttribute="top" secondItem="6tD-JO-tRX" secondAttribute="bottom" constant="17" id="fh6-oZ-rXe"/>
                             <constraint firstItem="85Y-h6-lp9" firstAttribute="top" secondItem="6tD-JO-tRX" secondAttribute="bottom" constant="17" id="gpv-YN-FdV"/>
                             <constraint firstItem="pcg-GA-Qlg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="6" id="qzE-Rb-pxZ"/>
+                            <constraint firstItem="zs5-5L-U6F" firstAttribute="leading" secondItem="BTZ-sj-6V2" secondAttribute="trailing" constant="15" id="vaj-Rf-fSq"/>
                             <constraint firstItem="qaI-AN-tv3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="zwW-I0-nGt"/>
                         </constraints>
                     </view>

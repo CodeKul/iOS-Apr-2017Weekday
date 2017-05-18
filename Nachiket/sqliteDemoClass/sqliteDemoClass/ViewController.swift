@@ -191,18 +191,47 @@ class ViewController: UIViewController {
         
         
     }
-
     
-    @IBAction func updateClicked(_ sender: UIButton) {
-        updateData()
+    
+    /* DELETE FROM COMPANY WHERE ID = 7 */
+    
+    
+    func deleteData(){
+        var statement : OpaquePointer? = nil
+        let x = txtRollNo.text
+        let query = "DELETE FROM StudentInfo WHERE RollNo ='\(x!)'"
+        
+        if sqlite3_prepare_v2(db, query, -1, &statement, nil)  != SQLITE_OK{
+            let errMsg = String(cString: sqlite3_errmsg(db!))
+            print("error in deleting data : \(errMsg)")
+        }
+        
     }
     
     
     
+    
+    
+    @IBAction func deleteClicked(_ sender: Any) {
+        deleteData()
+    }
+    
+    
+    
+
+    
+    @IBAction func updateClicked(_ sender: Any) {
+        updateData()
+
+    }
+ 
+    
+    
+    
     func textClearTextFeild() {
-        txtRollNo.text = " "
-        txtName.text = " "
-        txtMarks.text = " "
+        txtRollNo.text = ""
+        txtName.text = ""
+        txtMarks.text = ""
     }
     
 
