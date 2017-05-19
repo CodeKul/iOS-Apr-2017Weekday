@@ -197,11 +197,11 @@ class ViewController: UIViewController {
     
     
     func deleteData(){
-        var statement : OpaquePointer? = nil
+        //var statement : OpaquePointer? = nil
         let x = txtRollNo.text
-        let query = "DELETE FROM StudentInfo WHERE RollNo ='\(x!)'"
+        let query = "DELETE FROM StudentInfo WHERE RollNo = \(x!)"
         
-        if sqlite3_prepare_v2(db, query, -1, &statement, nil)  != SQLITE_OK{
+        if sqlite3_exec(db, query,nil, nil,nil) != SQLITE_OK{
             let errMsg = String(cString: sqlite3_errmsg(db!))
             print("error in deleting data : \(errMsg)")
         }
