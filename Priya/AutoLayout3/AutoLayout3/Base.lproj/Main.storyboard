@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayout3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pX0-kK-5nY">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWb-Vi-w8z">
+                                        <rect key="frame" x="19" y="25" width="39" height="30"/>
+                                        <state key="normal" title="Menu">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4xW-mB-5p1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.062391493059999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="FWb-Vi-w8z" firstAttribute="leading" secondItem="pX0-kK-5nY" secondAttribute="leading" constant="19" id="Iba-WI-FkF"/>
+                                    <constraint firstAttribute="height" constant="80" id="UA4-0E-7Mw"/>
+                                    <constraint firstItem="FWb-Vi-w8z" firstAttribute="centerY" secondItem="pX0-kK-5nY" secondAttribute="centerY" id="azG-UN-YG3"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FtU-Br-z20">
+                                <rect key="frame" x="-200" y="80" width="200" height="488"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7u2-pw-C4S">
+                                        <rect key="frame" x="8" y="41" width="184" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Item 1"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxt-9t-qpA">
+                                        <rect key="frame" x="8" y="79" width="184" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Item 2"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMP-6o-3LY">
+                                        <rect key="frame" x="8" y="117" width="184" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Item 3"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIR-XK-E3r">
+                                        <rect key="frame" x="8" y="155" width="184" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Item 4"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZU-ot-gKV">
+                                        <rect key="frame" x="8" y="8" width="184" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="sVZ-pa-r1T"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.75587902559999998" blue="0.29471725859999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pX0-kK-5nY" secondAttribute="trailing" id="0Uw-Ua-Ss2"/>
+                            <constraint firstItem="FtU-Br-z20" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="80" id="4A3-0B-EET"/>
+                            <constraint firstItem="FtU-Br-z20" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-200" identifier="leftMenuIdentifier" id="GlB-DT-WVt"/>
+                            <constraint firstItem="pX0-kK-5nY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cLR-DA-Nmo"/>
+                            <constraint firstAttribute="bottom" secondItem="FtU-Br-z20" secondAttribute="bottom" id="ieX-BU-lRW"/>
+                            <constraint firstItem="pX0-kK-5nY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="raR-ya-vQo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="leftMenuConstraint" destination="GlB-DT-WVt" id="m4c-zx-4of"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="138.38028169014083"/>
+        </scene>
+    </scenes>
+</document>

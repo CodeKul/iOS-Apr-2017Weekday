@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SQLLiteStudent" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mvs-nN-wJE">
+                                <rect key="frame" x="16" y="28" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Role No" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sE8-f3-uJ2">
+                                <rect key="frame" x="16" y="66" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Marks" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pMN-CF-l71">
+                                <rect key="frame" x="16" y="104" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGF-d3-hP9">
+                                <rect key="frame" x="16" y="142" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="btnSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ecG-FA-Ygi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGo-P9-2zM">
+                                <rect key="frame" x="249" y="142" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="btnDelete:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TmT-t0-b1u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaU-HK-vJi">
+                                <rect key="frame" x="185" y="142" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="btnSearch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EOv-zy-F9q"/>
+                                    <action selector="btnShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pXG-Ra-Dtj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhG-1H-zCR">
+                                <rect key="frame" x="118" y="142" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Update"/>
+                                <connections>
+                                    <action selector="btnUpdate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eEa-2g-aOl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ybj-YP-Yas">
+                                <rect key="frame" x="70" y="142" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show"/>
+                                <connections>
+                                    <action selector="btnShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lyd-zq-FM2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pMN-CF-l71" firstAttribute="top" secondItem="sE8-f3-uJ2" secondAttribute="bottom" constant="8" id="HxY-bK-dGP"/>
+                            <constraint firstItem="pMN-CF-l71" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Mnb-Ib-f6g"/>
+                            <constraint firstItem="sE8-f3-uJ2" firstAttribute="top" secondItem="Mvs-nN-wJE" secondAttribute="bottom" constant="8" id="NXo-oB-KpE"/>
+                            <constraint firstItem="pMN-CF-l71" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="R4z-yv-DNk"/>
+                            <constraint firstItem="sE8-f3-uJ2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VR7-hk-Xgj"/>
+                            <constraint firstItem="Mvs-nN-wJE" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Yry-8e-E4t"/>
+                            <constraint firstItem="Mvs-nN-wJE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="hko-tY-yDJ"/>
+                            <constraint firstItem="Mvs-nN-wJE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="s3Q-nn-Hk1"/>
+                            <constraint firstItem="sE8-f3-uJ2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wk8-7m-Q2b"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtMarks" destination="pMN-CF-l71" id="ZO3-Ki-lIz"/>
+                        <outlet property="txtName" destination="Mvs-nN-wJE" id="zDX-ZS-zeh"/>
+                        <outlet property="txtRNo" destination="sE8-f3-uJ2" id="Dh6-1b-SMX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33.75" y="34.859154929577464"/>
+        </scene>
+    </scenes>
+</document>
