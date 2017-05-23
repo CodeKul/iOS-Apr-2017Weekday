@@ -12,6 +12,8 @@ class courseTableViewCell: UITableViewCell {
 
     @IBOutlet weak var txtName : UILabel!
     
+    @IBOutlet weak var infoButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

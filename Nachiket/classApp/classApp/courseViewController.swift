@@ -13,6 +13,7 @@ class courseViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     @IBOutlet weak var tableView: UITableView!
     var courseName : [Course] = []
+    var uniqueData : [String] = []
     
     
     override func viewWillAppear(_ animated: Bool) {
@@ -37,23 +38,44 @@ class courseViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-                return (courseName.count)
+                return (uniqueData.count)
         
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! courseTableViewCell
         
-        let p = courseName[indexPath.row]
+        cell.txtName.text = uniqueData[indexPath.row]
         
-        cell.txtName.text = p.name
-        
+        cell.infoButton.addTarget(self, action: #selector(infoClicked(_ :)), for: .touchUpInside)
+        cell.infoButton.tag = indexPath.row
         return cell
     }
 
+    /*func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let batchInfo = storyboard?.instantiateViewController(withIdentifier: "addBatchViewController") as! addBatchViewController
+        let p = courseName[indexPath.row]
+        batchInfo.courseName = p.name!
+    }*/
     
+    
+    func infoClicked(_ sender : UIButton){
+        let s = uniqueData[sender.tag]
+        print("\((s))")
+        //let batchInfo = storyboard?.instantiateViewController(withIdentifier: "addBatch") as! addBatchViewController
+        let p = (UIApplication.shared.delegate as! AppDelegate)
+        
+        p.cName = s
+        
+
+    }
+    
+    @IBAction func showBatch(_ sender: Any) {
+        performSegue(withIdentifier: "batches", sender: sender)
+    }
     
 
+ 
     /*
     // MARK: - Navigation
 
@@ -70,10 +92,15 @@ class courseViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         do {
             courseName =  try context.fetch(Course.fetchRequest())
+            
+            for a in courseName {
+               uniqueData.append(a.name!)
+            }
         } catch  {
             fatalError("errr: \(error)")
         }
-        
+        uniqueData = Array(Set(uniqueData))
+        uniqueData.sort(){$0 < $1}
         
         
     }
