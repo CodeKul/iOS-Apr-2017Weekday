@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,25 +22,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="puo-cG-OhQ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="500" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="puo-cG-OhQ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="500" id="Rol-gH-c9I">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="500" id="Rol-gH-c9I" customClass="imageTableViewCell" customModule="tableImage" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="500"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rol-gH-c9I" id="Wyv-5t-QYS">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="499"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ABC.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cDb-l6-zF1">
-                                                    <rect key="frame" x="8" y="8" width="351" height="500"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aXy-0k-edD">
+                                                    <rect key="frame" x="8" y="8" width="359" height="483.5"/>
                                                 </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="aXy-0k-edD" secondAttribute="bottom" id="Lsb-Q1-bj5"/>
+                                                <constraint firstItem="aXy-0k-edD" firstAttribute="top" secondItem="Wyv-5t-QYS" secondAttribute="topMargin" id="a7S-oO-dsy"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="aXy-0k-edD" secondAttribute="trailing" id="bxv-1m-bfN"/>
+                                                <constraint firstItem="aXy-0k-edD" firstAttribute="leading" secondItem="Wyv-5t-QYS" secondAttribute="leadingMargin" id="uLe-Dv-Rqq"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgView" destination="aXy-0k-edD" id="5q5-du-vGs"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="WmD-g8-k9g"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="qad-lJ-5i9"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -50,13 +63,13 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="puo-cG-OhQ" secondAttribute="bottom" id="llN-OH-bum"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="puo-cG-OhQ" id="oHm-28-dL0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="35.532233883058474"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="ABC.jpg" width="1000" height="667"/>
-    </resources>
 </document>
