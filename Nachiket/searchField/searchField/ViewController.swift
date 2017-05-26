@@ -15,6 +15,7 @@ class ViewController: UIViewController,UITextFieldDelegate, UITableViewDelegate,
     
     var list = ["Asd", "Wad", "Awd", "Asdfgh", "Wedfg"]
     var autoArray : [String] = []
+    var constant = 0
     
     
     
@@ -82,5 +83,18 @@ class ViewController: UIViewController,UITextFieldDelegate, UITableViewDelegate,
         tableView.reloadData()
     }
     
+    @IBAction func searchClicked(_ sender: UIButton) {
+        
+        for a in list {
+            if txtField.text == a {
+               constant = constant + 1
+            }
+        }
+        if constant == 0 {
+            list.append(txtField.text!)
+            txtField.text = ""
+            tableView.reloadData()
+        }
+    }
 }
 
