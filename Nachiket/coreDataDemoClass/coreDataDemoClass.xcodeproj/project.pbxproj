@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8723A0F41ED8416C00B90141 /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8723A0F01ED8416C00B90141 /* Student+CoreDataClass.swift */; };
+		8723A0F51ED8416C00B90141 /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8723A0F11ED8416C00B90141 /* Student+CoreDataProperties.swift */; };
+		8723A0F61ED8416C00B90141 /* Class+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8723A0F21ED8416C00B90141 /* Class+CoreDataClass.swift */; };
+		8723A0F71ED8416C00B90141 /* Class+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8723A0F31ED8416C00B90141 /* Class+CoreDataProperties.swift */; };
 		87E31E0C1ECEAC3B001FEFB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E31E0B1ECEAC3B001FEFB4 /* AppDelegate.swift */; };
 		87E31E0E1ECEAC3B001FEFB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E31E0D1ECEAC3B001FEFB4 /* ViewController.swift */; };
 		87E31E111ECEAC3B001FEFB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87E31E0F1ECEAC3B001FEFB4 /* Main.storyboard */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8723A0F01ED8416C00B90141 /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Student+CoreDataClass.swift"; path = "coreDataDemoClass/Student+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8723A0F11ED8416C00B90141 /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Student+CoreDataProperties.swift"; path = "coreDataDemoClass/Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8723A0F21ED8416C00B90141 /* Class+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Class+CoreDataClass.swift"; path = "coreDataDemoClass/Class+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8723A0F31ED8416C00B90141 /* Class+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Class+CoreDataProperties.swift"; path = "coreDataDemoClass/Class+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		87E31E081ECEAC3B001FEFB4 /* coreDataDemoClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coreDataDemoClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87E31E0B1ECEAC3B001FEFB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87E31E0D1ECEAC3B001FEFB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +48,10 @@
 		87E31DFF1ECEAC3B001FEFB4 = {
 			isa = PBXGroup;
 			children = (
+				8723A0F01ED8416C00B90141 /* Student+CoreDataClass.swift */,
+				8723A0F11ED8416C00B90141 /* Student+CoreDataProperties.swift */,
+				8723A0F21ED8416C00B90141 /* Class+CoreDataClass.swift */,
+				8723A0F31ED8416C00B90141 /* Class+CoreDataProperties.swift */,
 				87E31E0A1ECEAC3B001FEFB4 /* coreDataDemoClass */,
 				87E31E091ECEAC3B001FEFB4 /* Products */,
 			);
@@ -140,8 +152,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				87E31E141ECEAC3B001FEFB4 /* coreDataDemoClass.xcdatamodeld in Sources */,
+				8723A0F41ED8416C00B90141 /* Student+CoreDataClass.swift in Sources */,
+				8723A0F61ED8416C00B90141 /* Class+CoreDataClass.swift in Sources */,
 				87E31E0E1ECEAC3B001FEFB4 /* ViewController.swift in Sources */,
 				87E31E0C1ECEAC3B001FEFB4 /* AppDelegate.swift in Sources */,
+				8723A0F51ED8416C00B90141 /* Student+CoreDataProperties.swift in Sources */,
+				8723A0F71ED8416C00B90141 /* Class+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
