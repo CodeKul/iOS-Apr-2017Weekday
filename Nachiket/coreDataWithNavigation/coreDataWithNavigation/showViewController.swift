@@ -17,11 +17,16 @@ class showViewController: UIViewController {
     @IBOutlet weak var lblAge: UILabel!
     
     
+    @IBOutlet weak var lblCourse: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         lblName.text = infoIndex?.name
         lblAge.text = String(describing: infoIndex!.age)
+        
+        let course = infoIndex?.studentToCourse?.allObjects.first as! Course
+        
+        lblCourse.text = course.name
         
 
         // Do any additional setup after loading the view.

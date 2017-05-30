@@ -30,7 +30,7 @@
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UXO-Ey-ILi" id="v51-Ky-TC0">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UbF-G0-LWj">
@@ -241,7 +241,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ajg-uX-5pe" id="10Q-R9-seb">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7MV-Om-pzo">
@@ -339,19 +339,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVL-YI-ek5">
+                                <rect key="frame" x="16" y="140" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="WVL-YI-ek5" firstAttribute="top" secondItem="Bvf-0Z-NV0" secondAttribute="bottom" constant="8" symbolic="YES" id="7b3-Q0-MTh"/>
+                            <constraint firstItem="WVL-YI-ek5" firstAttribute="leading" secondItem="Bvf-0Z-NV0" secondAttribute="leading" id="LLy-yT-YOG"/>
                             <constraint firstItem="UJZ-t4-rtH" firstAttribute="leading" secondItem="BNT-1E-XnO" secondAttribute="leadingMargin" id="Qad-W8-Owt"/>
+                            <constraint firstItem="WVL-YI-ek5" firstAttribute="width" secondItem="Bvf-0Z-NV0" secondAttribute="width" id="WHE-J3-gJE"/>
                             <constraint firstItem="UJZ-t4-rtH" firstAttribute="top" secondItem="ihh-5r-ovg" secondAttribute="bottom" id="ZfC-ec-0NZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="UJZ-t4-rtH" secondAttribute="trailing" id="dPs-Sb-IwF"/>
                             <constraint firstItem="Bvf-0Z-NV0" firstAttribute="trailing" secondItem="BNT-1E-XnO" secondAttribute="trailingMargin" id="jNl-Su-AWT"/>
                             <constraint firstItem="Bvf-0Z-NV0" firstAttribute="leading" secondItem="BNT-1E-XnO" secondAttribute="leadingMargin" id="tV5-jJ-GNX"/>
+                            <constraint firstItem="WVL-YI-ek5" firstAttribute="height" secondItem="Bvf-0Z-NV0" secondAttribute="height" id="xBG-yo-edr"/>
                             <constraint firstItem="Bvf-0Z-NV0" firstAttribute="top" secondItem="UJZ-t4-rtH" secondAttribute="bottom" constant="8" id="yy3-yy-ew5"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="lblAge" destination="Bvf-0Z-NV0" id="bzY-q1-Y5f"/>
+                        <outlet property="lblCourse" destination="WVL-YI-ek5" id="eBj-Kn-AM8"/>
                         <outlet property="lblName" destination="UJZ-t4-rtH" id="6jP-FU-noj"/>
                     </connections>
                 </viewController>
@@ -379,7 +390,7 @@
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KDh-aS-mwz" id="w76-og-Sdm">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B45-4D-d28">
