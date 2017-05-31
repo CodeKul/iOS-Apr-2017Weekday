@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="localNotificationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="qsW-hw-zLo">
+                                <rect key="frame" x="0.0" y="447" width="375" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="JGI-6L-zad"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="517897391.76615602">
+                                    <!--2017-05-31 04:23:11 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="datePickerChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="ChB-MT-ZlF"/>
+                                </connections>
+                            </datePicker>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5kL-a9-Blm">
+                                <rect key="frame" x="16" y="20" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQH-ue-Nhd">
+                                <rect key="frame" x="142.5" y="58" width="91" height="30"/>
+                                <state key="normal" title="Set Reminser"/>
+                                <connections>
+                                    <action selector="setReminderClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f4F-x8-kq7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5kL-a9-Blm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="7P7-n0-DAu"/>
+                            <constraint firstItem="5kL-a9-Blm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="HHt-ua-pp9"/>
+                            <constraint firstItem="qsW-hw-zLo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Rh2-vo-jHd"/>
+                            <constraint firstItem="vQH-ue-Nhd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aws-5k-n78"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5kL-a9-Blm" secondAttribute="trailing" id="h1L-tp-cn4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qsW-hw-zLo" secondAttribute="bottom" id="hfy-Nw-i6P"/>
+                            <constraint firstItem="vQH-ue-Nhd" firstAttribute="top" secondItem="5kL-a9-Blm" secondAttribute="bottom" constant="8" id="q1h-Q0-JAq"/>
+                            <constraint firstAttribute="trailing" secondItem="qsW-hw-zLo" secondAttribute="trailing" id="wbA-O8-Ifx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtDate" destination="5kL-a9-Blm" id="y41-pD-Ted"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
