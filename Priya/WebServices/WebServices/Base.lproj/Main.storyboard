@@ -26,11 +26,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="219" id="3bw-fI-Udi">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BreakFastCell" rowHeight="219" id="3bw-fI-Udi" customClass="BreakfastTableViewCell" customModule="WebServices" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="219"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3bw-fI-Udi" id="I2h-YX-GmV">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="218"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="219"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BreakFast Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFC-ze-eqq">
@@ -77,12 +77,25 @@
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cal" destination="IXe-mx-SYQ" id="9vg-K8-4Uv"/>
+                                            <outlet property="desc" destination="8xM-a5-Zuc" id="vJm-Th-chc"/>
+                                            <outlet property="name" destination="5ZG-AB-wjy" id="GR3-Jx-38e"/>
+                                            <outlet property="price" destination="alu-rJ-d59" id="PNJ-ZT-pQD"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="cYw-VX-fhx"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="4aw-C1-daW"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="brekfastTableView" destination="1Ms-q5-Anz" id="cJF-YK-9pQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
