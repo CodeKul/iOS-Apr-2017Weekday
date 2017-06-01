@@ -19,6 +19,13 @@ class addBatchViewController: UIViewController {
     
     var datePicker = UIDatePicker()
     var timePicker = UIDatePicker()
+    var courseName : Array<Course>?
+    var uniqueData : String = ""
+    var courseNameABVC : Course?
+    
+    
+    
+    
     
     
     
@@ -29,11 +36,10 @@ class addBatchViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        let p = (UIApplication.shared.delegate as! AppDelegate)
         createDatePicker()
         createTimePicker()
-        print(p.cName)
-        lblCouse.text = p.cName
+        print(uniqueData)
+        lblCouse.text = courseNameABVC?.name
         
     }
 
@@ -41,6 +47,9 @@ class addBatchViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    //MARK: - DATE and Time Picker
     
     func createDatePicker(){
         
@@ -78,20 +87,14 @@ class addBatchViewController: UIViewController {
         
         txtTime.inputAccessoryView = toolbar
         txtTime.inputView = timePicker
-        
-        
     }
-    
-    
-    
-    
+   
     func dateDonePressed(){
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .short
         dateFormatter.timeStyle = .none
         txtDate.text = dateFormatter.string(from: datePicker.date)
         self.view.endEditing(true)
-        
     }
     
     func timeDonePressed(){
@@ -100,38 +103,26 @@ class addBatchViewController: UIViewController {
         dateFormatter.timeStyle = .short
         txtTime.text = dateFormatter.string(from: timePicker.date)
         self.view.endEditing(true)
-        
     }
 
-    
 
-    /*
     // MARK: - Button events
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     
     @IBAction func saveClicked(_ sender: Any) {
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         
         let batchInfo = NSEntityDescription.insertNewObject(forEntityName: "Batch", into: context) as! Batch
-        let courseInfo = NSEntityDescription.insertNewObject(forEntityName: "Course", into: context) as! Course
         
-        batchInfo.name = txtName.text!
-        batchInfo.startDate = txtDate.text!
-        batchInfo.time = txtTime.text!
-        //batchInfo.course = lblCouse.text!
-        courseInfo.name = lblCouse.text!
-        batchInfo.course = courseInfo
+            batchInfo.name = txtName.text!
+            batchInfo.startDate = txtDate.text!
+            batchInfo.time = txtTime.text!
+            batchInfo.addToBatchToCourse(courseNameABVC!)
         
-        (UIApplication.shared.delegate as! AppDelegate).saveContext()
-        navigationController?.popViewController(animated: true)
+            (UIApplication.shared.delegate as! AppDelegate).saveContext()
+            navigationController?.popViewController(animated: true)
         
+    
     }
     
 

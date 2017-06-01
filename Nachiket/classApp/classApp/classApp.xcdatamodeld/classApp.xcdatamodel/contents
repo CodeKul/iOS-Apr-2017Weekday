@@ -4,22 +4,24 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="startDate" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="time" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="batchToCourse" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Course" inverseName="courseToBatch" inverseEntity="Course" syncable="YES"/>
         <relationship name="batchToStudent" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Student" inverseName="studentToBatch" inverseEntity="Student" syncable="YES"/>
-        <relationship name="course" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Course" inverseName="batch" inverseEntity="Course" syncable="YES"/>
     </entity>
     <entity name="Course" representedClassName="Course" syncable="YES" codeGenerationType="class">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="batch" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Batch" inverseName="course" inverseEntity="Batch" syncable="YES"/>
+        <relationship name="courseToBatch" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Batch" inverseName="batchToCourse" inverseEntity="Batch" syncable="YES"/>
+        <relationship name="courseToStudent" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Student" inverseName="studentToCourse" inverseEntity="Student" syncable="YES"/>
     </entity>
     <entity name="Student" representedClassName="Student" syncable="YES" codeGenerationType="class">
-        <attribute name="contactNO" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="contactNO" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="paidFee" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <relationship name="studentToBatch" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Batch" inverseName="batchToStudent" inverseEntity="Batch" syncable="YES"/>
+        <attribute name="paidFee" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="studentToBatch" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Batch" inverseName="batchToStudent" inverseEntity="Batch" syncable="YES"/>
+        <relationship name="studentToCourse" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Course" inverseName="courseToStudent" inverseEntity="Course" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Batch" positionX="-693" positionY="-12" width="128" height="118"/>
-        <element name="Course" positionX="-63" positionY="-1" width="128" height="75"/>
-        <element name="Student" positionX="-486" positionY="27" width="128" height="105"/>
+        <element name="Batch" positionX="-837" positionY="-207" width="128" height="118"/>
+        <element name="Course" positionX="-549" positionY="-288" width="128" height="90"/>
+        <element name="Student" positionX="-461" positionY="45" width="128" height="120"/>
     </elements>
 </model>

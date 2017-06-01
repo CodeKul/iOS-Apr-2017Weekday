@@ -19,6 +19,9 @@
 		874AF05D1ED2A4E6005A233C /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874AF05C1ED2A4E6005A233C /* secondViewController.swift */; };
 		874AF05F1ED2A653005A233C /* courseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874AF05E1ED2A653005A233C /* courseViewController.swift */; };
 		874AF0611ED2B3E7005A233C /* saveCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874AF0601ED2B3E7005A233C /* saveCourseViewController.swift */; };
+		87D998211EDEA93A006D94F4 /* allStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D998201EDEA93A006D94F4 /* allStudentViewController.swift */; };
+		87D998231EDEA94B006D94F4 /* allStudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D998221EDEA94A006D94F4 /* allStudentTableViewCell.swift */; };
+		87D998251EDEC1D2006D94F4 /* studentInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D998241EDEC1D2006D94F4 /* studentInformationViewController.swift */; };
 		87E4A4311ED2BC76004EC176 /* courseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E4A4301ED2BC76004EC176 /* courseTableViewCell.swift */; };
 		87E4A4331ED2CE76004EC176 /* batchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E4A4321ED2CE75004EC176 /* batchTableViewCell.swift */; };
 		87E4A4351ED2CEC8004EC176 /* batchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E4A4341ED2CEC8004EC176 /* batchViewController.swift */; };
@@ -40,6 +43,9 @@
 		874AF05C1ED2A4E6005A233C /* secondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		874AF05E1ED2A653005A233C /* courseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = courseViewController.swift; sourceTree = "<group>"; };
 		874AF0601ED2B3E7005A233C /* saveCourseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = saveCourseViewController.swift; sourceTree = "<group>"; };
+		87D998201EDEA93A006D94F4 /* allStudentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = allStudentViewController.swift; sourceTree = "<group>"; };
+		87D998221EDEA94A006D94F4 /* allStudentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = allStudentTableViewCell.swift; sourceTree = "<group>"; };
+		87D998241EDEC1D2006D94F4 /* studentInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = studentInformationViewController.swift; sourceTree = "<group>"; };
 		87E4A4301ED2BC76004EC176 /* courseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = courseTableViewCell.swift; sourceTree = "<group>"; };
 		87E4A4321ED2CE75004EC176 /* batchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = batchTableViewCell.swift; sourceTree = "<group>"; };
 		87E4A4341ED2CEC8004EC176 /* batchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = batchViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +99,9 @@
 				870EA5FC1ED4491300687A59 /* batchStudentTableViewCell.swift */,
 				870EA5FE1ED4499200687A59 /* batchStudentViewController.swift */,
 				870EA6001ED44B2800687A59 /* addBatchStudentViewController.swift */,
+				87D998201EDEA93A006D94F4 /* allStudentViewController.swift */,
+				87D998221EDEA94A006D94F4 /* allStudentTableViewCell.swift */,
+				87D998241EDEC1D2006D94F4 /* studentInformationViewController.swift */,
 			);
 			path = classApp;
 			sourceTree = "<group>";
@@ -172,6 +181,7 @@
 				87E4A4331ED2CE76004EC176 /* batchTableViewCell.swift in Sources */,
 				87E4A4371ED2D1E9004EC176 /* addBatchViewController.swift in Sources */,
 				874AF05D1ED2A4E6005A233C /* secondViewController.swift in Sources */,
+				87D998231EDEA94B006D94F4 /* allStudentTableViewCell.swift in Sources */,
 				87E4A4351ED2CEC8004EC176 /* batchViewController.swift in Sources */,
 				874AF04A1ED2983C005A233C /* ViewController.swift in Sources */,
 				874AF0481ED2983C005A233C /* AppDelegate.swift in Sources */,
@@ -181,6 +191,8 @@
 				874AF05F1ED2A653005A233C /* courseViewController.swift in Sources */,
 				87E4A4311ED2BC76004EC176 /* courseTableViewCell.swift in Sources */,
 				870EA5FD1ED4491300687A59 /* batchStudentTableViewCell.swift in Sources */,
+				87D998251EDEC1D2006D94F4 /* studentInformationViewController.swift in Sources */,
+				87D998211EDEA93A006D94F4 /* allStudentViewController.swift in Sources */,
 				870EA6011ED44B2800687A59 /* addBatchStudentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
