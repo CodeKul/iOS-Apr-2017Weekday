@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B16ABC11EDFD3F80016EB6C /* CitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B16ABC01EDFD3F80016EB6C /* CitiesTableViewCell.swift */; };
+		8B16ABC31EDFD4550016EB6C /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B16ABC21EDFD4550016EB6C /* CitiesViewController.swift */; };
 		8BAE46941EDD2CFB00B57179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAE46931EDD2CFB00B57179 /* AppDelegate.swift */; };
 		8BAE46961EDD2CFB00B57179 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAE46951EDD2CFB00B57179 /* ViewController.swift */; };
 		8BAE46991EDD2CFB00B57179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BAE46971EDD2CFB00B57179 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B16ABC01EDFD3F80016EB6C /* CitiesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesTableViewCell.swift; sourceTree = "<group>"; };
+		8B16ABC21EDFD4550016EB6C /* CitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesViewController.swift; sourceTree = "<group>"; };
 		8BAE46901EDD2CFB00B57179 /* XMLParsingRSS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMLParsingRSS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BAE46931EDD2CFB00B57179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BAE46951EDD2CFB00B57179 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				8BAE469C1EDD2CFB00B57179 /* LaunchScreen.storyboard */,
 				8BAE469F1EDD2CFB00B57179 /* Info.plist */,
 				8BAE46A51EDD2FC000B57179 /* NewsPaperTableViewCell.swift */,
+				8B16ABC01EDFD3F80016EB6C /* CitiesTableViewCell.swift */,
+				8B16ABC21EDFD4550016EB6C /* CitiesViewController.swift */,
 			);
 			path = XMLParsingRSS;
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B16ABC11EDFD3F80016EB6C /* CitiesTableViewCell.swift in Sources */,
+				8B16ABC31EDFD4550016EB6C /* CitiesViewController.swift in Sources */,
 				8BAE46A61EDD2FC000B57179 /* NewsPaperTableViewCell.swift in Sources */,
 				8BAE46961EDD2CFB00B57179 /* ViewController.swift in Sources */,
 				8BAE46941EDD2CFB00B57179 /* AppDelegate.swift in Sources */,
@@ -301,6 +309,7 @@
 				8BAE46A41EDD2CFB00B57179 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

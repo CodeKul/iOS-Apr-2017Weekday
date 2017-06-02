@@ -36,10 +36,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let s = newsPaper?[indexPath.row]
         cell.txtNewsPaper.text = s
-        //cell?.infoButton.addTarget(self, action: #selector(infoClicked(_ :)), for: .touchUpInside)
-        //cell?.infoButton.tag = indexPath.row
-        
+       
         return cell
+    }
+  
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showCities", sender: Any?.self)
     }
     
     override func didReceiveMemoryWarning() {
