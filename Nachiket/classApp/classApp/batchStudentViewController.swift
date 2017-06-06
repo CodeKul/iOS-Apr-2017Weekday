@@ -55,7 +55,7 @@ class batchStudentViewController: UIViewController, UITableViewDelegate, UITable
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         
-        if editingStyle == .delete {
+        if editingStyle == .insert {
             let deleteData = studInfo?[indexPath.row]
             context.delete(deleteData!)
             appDelegate.saveContext()
