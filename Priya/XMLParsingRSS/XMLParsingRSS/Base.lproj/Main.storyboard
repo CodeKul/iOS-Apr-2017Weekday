@@ -128,12 +128,43 @@
                     </view>
                     <navigationItem key="navigationItem" title="Cities" id="Pmt-WD-20R"/>
                     <connections>
+<<<<<<< HEAD
                         <segue destination="jac-bf-KNE" kind="show" identifier="News" id="c9h-cl-eim"/>
+=======
+                        <segue destination="psv-Yx-1pq" kind="show" id="HQ8-yi-ZIF"/>
+>>>>>>> origin/master
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lq5-BZ-Fml" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="763" y="135"/>
+            <point key="canvasLocation" x="797" y="133"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="JAh-oK-XBd">
+            <objects>
+                <viewController title="News" id="psv-Yx-1pq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rPU-QY-Aie"/>
+                        <viewControllerLayoutGuide type="bottom" id="ter-VQ-8Xl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sbm-O3-PVb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3gs-bm-Ccg">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="News" id="k3q-fu-7fe"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U8b-Kw-nNZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1676" y="132"/>
         </scene>
         <!--News-->
         <scene sceneID="Xpg-GD-GOP">
