@@ -10,7 +10,7 @@ import UIKit
 
 class CitiesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     var arrCities : Array<String>?
-    
+    var selectedCity : String?
     
     override func viewDidLoad() {
        
@@ -30,7 +30,7 @@ class CitiesViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "City") as! CitiesTableViewCell
         
-        if cell == nil{
+        if cell == nil {
             
             cell = CitiesTableViewCell(style: .default, reuseIdentifier: "City")
         }
@@ -41,12 +41,22 @@ class CitiesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return cell
     }
     
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedCity = arrCities?[indexPath.row]
+        performSegue(withIdentifier: "News", sender: Any?.self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cityName = segue.destination as! NewsViewController
+        cityName.selCity = selectedCity
+    }
+    
     /*
     // MARK: - Navigation
 
