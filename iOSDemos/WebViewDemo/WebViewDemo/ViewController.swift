@@ -20,7 +20,7 @@ class ViewController: UIViewController, UIWebViewDelegate {
 //        
 //        webView.loadRequest(req)
         
-        let html = "<html><body><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/QOyCL-gqu1I\" frameborder=\"0\" allowfullscreen></iframe></body></html>"
+        let html = "<html><body><iframe width=\"290\" height=\"180\" src=\"https://www.youtube.com/embed/QOyCL-gqu1I\" frameborder=\"0\" allowfullscreen></iframe></body></html>"
         
         
         webView.loadHTMLString(html, baseURL: nil)
